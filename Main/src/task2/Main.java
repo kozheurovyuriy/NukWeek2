@@ -1,7 +1,9 @@
 package task2;
 
-import static task2.Lines.RAILWAY;
-import static task2.Lines.ROAD;
+import task2.transport.PassengerCarrier;
+
+import static task2.lines.Lines.RAILWAY;
+import static task2.lines.Lines.ROAD;
 
 public class Main {
     /*
@@ -14,7 +16,7 @@ public class Main {
 
         int requiredDistanse = 450;
 
-        TransportTypeSelectorFactory transportTypeSelector = new TransportTypeSelectorFactory(ROAD, RAILWAY);
+        TransportTypeFactorySelector transportTypeSelector = new TransportTypeFactorySelector(ROAD, RAILWAY);
 
         PassengerCarrier transportByDistance =
                 transportTypeSelector.getTransportByDistance(requiredDistanse);

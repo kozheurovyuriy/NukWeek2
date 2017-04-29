@@ -1,15 +1,22 @@
 package task2;
 
+import task2.lines.CommunicationLines;
+import task2.lines.Lines;
+import task2.transport.Car;
+import task2.transport.PassengerCarrier;
+import task2.transport.Plane;
+import task2.transport.Train;
+
 import java.util.Set;
 
-import static task2.Lines.RAILWAY;
-import static task2.Lines.ROAD;
+import static task2.lines.Lines.RAILWAY;
+import static task2.lines.Lines.ROAD;
 
-public class TransportTypeSelectorFactory {
+public class TransportTypeFactorySelector {
 
     private CommunicationLines communicationLines;
 
-    public TransportTypeSelectorFactory(Lines ... lines) {
+    public TransportTypeFactorySelector(Lines... lines) {
         communicationLines = new CommunicationLines();
         for(Lines l: lines)
             communicationLines.addLine(l);

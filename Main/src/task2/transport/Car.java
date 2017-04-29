@@ -1,8 +1,8 @@
-package task2;
+package task2.transport;
 
 public class Car extends PassengerCarrier{
     @Override
-    String getTypeTransportName() {
+    public String getTypeTransportName() {
         return "Car";
     }
 }

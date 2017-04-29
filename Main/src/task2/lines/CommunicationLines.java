@@ -1,4 +1,4 @@
-package task2;
+package task2.lines;
 
 import java.util.HashSet;
 import java.util.Set;
